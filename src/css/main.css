@@ -2668,8 +2668,7 @@ input[type='button']:disabled,
 }
 
 /* Header */
-
-#header {
+#welcome-section {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -2693,7 +2692,7 @@ input[type='button']:disabled,
 	background-repeat: repeat, no-repeat;
 	background-size: auto, 150%;
 	color: rgba(255, 255, 255, 0.5);
-	height: 100%;
+	height: 100vh;
 	left: 0;
 	padding: 8em 4em;
 	position: fixed;
@@ -2702,7 +2701,7 @@ input[type='button']:disabled,
 	width: 35%;
 }
 
-#header > * {
+#welcome-section > * {
 	-moz-flex-shrink: 0;
 	-webkit-flex-shrink: 0;
 	-ms-flex-shrink: 0;
@@ -2710,7 +2709,7 @@ input[type='button']:disabled,
 	width: 100%;
 }
 
-#header > .inner {
+#welcome-section > .inner {
 	-moz-flex-grow: 1;
 	-webkit-flex-grow: 1;
 	-ms-flex-grow: 1;
@@ -2718,27 +2717,27 @@ input[type='button']:disabled,
 	margin: 0 0 2em 0;
 }
 
-#header strong,
-#header b {
+#welcome-section strong,
+#welcome-section b {
 	color: #ffffff;
 }
 
-#header h2,
-#header h3,
-#header h4,
-#header h5,
-#header h6 {
+#welcome-section h2,
+#welcome-section h3,
+#welcome-section h4,
+#welcome-section h5,
+#welcome-section h6 {
 	color: #ffffff;
 }
 
-#header h1 {
+#welcome-section h1 {
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 1.35em;
 	line-height: 1.75em;
 	margin: 0;
 }
 
-#header .image.avatar {
+#welcome-section .image.avatar {
 	margin: 0 0 1em 0;
 	width: 6.25em;
 }
@@ -3067,7 +3066,7 @@ body.is-touch .image.thumb:after {
 	display: none !important;
 }
 
-body.is-touch #header {
+body.is-touch #welcome-section {
 	background-attachment: scroll;
 	background-size: auto, cover;
 }
@@ -3096,20 +3095,20 @@ body.is-touch .poptrox-popup .closer {
 @media screen and (max-width: 1280px) {
 	/* Header */
 
-	#header {
+	#welcome-section {
 		padding: 6em 3em 3em 3em;
 		width: 30%;
 	}
 
-	#header h1 {
+	#welcome-section h1 {
 		font-size: 1.25em;
 	}
 
-	#header h1 br {
+	#welcome-section h1 br {
 		display: none;
 	}
 
-	#header > .inner {
+	#welcome-section > .inner {
 		margin-bottom: 0;
 	}
 
@@ -3155,7 +3154,7 @@ body.is-touch .poptrox-popup .closer {
 
 	/* Header */
 
-	#header {
+	#welcome-section {
 		background-attachment: scroll;
 		background-position: top left, center center;
 		background-size: auto, cover;
@@ -3168,11 +3167,11 @@ body.is-touch .poptrox-popup .closer {
 		display: block;
 	}
 
-	#header h1 {
+	#welcome-section h1 {
 		font-size: 1.75em;
 	}
 
-	#header h1 br {
+	#welcome-section h1 br {
 		display: inline;
 	}
 
@@ -3258,11 +3257,11 @@ body.is-touch .poptrox-popup .closer {
 
 	/* Header */
 
-	#header {
+	#welcome-section {
 		padding: 2.25em 1.5em;
 	}
 
-	#header h1 {
+	#welcome-section h1 {
 		font-size: 1.35em;
 	}
 
@@ -3300,11 +3299,11 @@ body.is-touch .poptrox-popup .closer {
 @media screen and (max-width: 480px) {
 	/* Header */
 
-	#header {
+	#welcome-section {
 		padding: 4.5em 1.5em;
 	}
 
-	#header h1 br {
+	#welcome-section h1 br {
 		display: none;
 	}
 
@@ -3317,4 +3316,10 @@ body.is-touch .poptrox-popup .closer {
 		margin-left: 0;
 		padding-left: 0;
 	}
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
