@@ -1,5 +1,5 @@
-# tribute-page
+# personal-portfolio
 
-Tribute Page
+Personal Portfolio
 
-Page: https://dsschiramm.github.io/tribute-page/
+Page: https://dsschiramm.github.io/personal-portfolio/
